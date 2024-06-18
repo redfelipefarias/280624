@@ -14,5 +14,5 @@
     div.style.display = 'flex';
     div.style.justifyContent = 'center';
     div.style.alignItems = 'center';
-    div.style.backgroundColor = 'white';
+    div.style.backgroundColor = 'gray';
     body.appendChild(div);
