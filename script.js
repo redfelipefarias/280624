@@ -4,9 +4,9 @@
     body.style.backgroundPosition = "center";
     body.style.display = 'flex';
     body.style.justifyContent = 'center';
-    body.style.alignItems = 'end';
+    body.style.alignItems = 'center';
     body.style.height = '100vh';
-    body.style.overflow = 'hidden'
+    body.style.overflow = 'hidden';
 
     const div = document.createElement('div');
     div.style.height = '400px';
@@ -17,7 +17,12 @@
     div.style.backgroundColor = 'white';
     div.style.border = "10px solid red ";
     body.appendChild(div);
-
+   
     const textoBody = document.createElement('h1');
-    textoBody.textContent = 'Calcular Média'
+    textoBody.textContent = 'Calcular Média';
     body.appendChild(textoBody);
+
+    const bt = document.createElement('button');
+    bt.textContent = 'Calcular Média';
+    div.appendChild(bt);
+    
