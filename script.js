@@ -12,7 +12,8 @@
     div.style.height = '400px';
     div.style.width = '800px';
     div.style.display = 'flex';
-    div.style.justifyContent = 'center';
+    div.style.justifyContent = 'space-evenly';
+    div.style.flexDirection = 'column'
     div.style.alignItems = 'center'
     div.style.backgroundColor = 'white';
     div.style.border = "10px solid red ";
@@ -20,9 +21,42 @@
    
     const textoBody = document.createElement('h1');
     textoBody.textContent = 'Calcular Média';
-    body.appendChild(textoBody);
+    div.appendChild(textoBody);
+    
+    const nome = document.createElement('input');
+    nome.style.width = '200px';
+    nome.style.height = '10px';
+    nome.style.backgroundColor = 'lightgray';
+    nome.style.border = '3px solid red';
+    nome.style.borderRadius = '5px';
+    div.appendChild(nome);
+
+    const numero1 = document.createElement('input');
+    numero1.style.width = '200px';
+    numero1.style.height = '10px';
+    numero1.style.backgroundColor = 'lightgray';
+    numero1.style.border = '3px solid red';
+    numero1.style.borderRadius = '5px';
+    div.appendChild(numero1);
+
+    const numero2 = document.createElement('input');
+    numero2.style.width = '200px';
+    numero2.style.height = '10px';
+    numero2.style.backgroundColor = 'lightgray';
+    numero2.style.border = '3px solid red';
+    numero2.style.borderRadius = '5px';
+    div.appendChild(numero2);
+
+    const numero3 = document.createElement('input');
+    numero3.style.width = '200px';
+    numero3.style.height = '10px';
+    numero3.style.backgroundColor = 'lightgray';
+    numero3.style.border = '3px solid red';
+    numero3.style.borderRadius = '5px';
+    div.appendChild(numero3);
 
     const bt = document.createElement('button');
     bt.textContent = 'Calcular Média';
     div.appendChild(bt);
+
     
