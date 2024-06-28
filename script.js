@@ -39,7 +39,7 @@ div.style.borderRadius = "20px"
 div.style.justifyContent = 'space-evenly';
 div.style.flexDirection = 'column'
 div.style.alignItems = 'center'
-div.style.backgroundColor = 'white';
+div.style.backgroundColor = 'black';
 div.style.border = "1px solid red ";
 body.appendChild(div);
 
