@@ -94,15 +94,14 @@ button.style.height = `20px`;
 button.style.border = `2px solid black`;
 button.style.borderRadius = `5px`;
 button.style.cursor = `pointer`;
-div.appendChild(button)
+div.appendChild(button);
+
 button.addEventListener('click', function () {
     const nome = nome.value;
     const numero1 = parseFloat(numero1.value)
     const numero2 = parseFloat(numero2.value)
     const numero3 = parseFloat(numero3.value)
     const media = ((numero1 + numero2 + numero3) / 3)
-
-
 resultado.textContent = `A média das 3 notas é: ${media}`;
 });
 
