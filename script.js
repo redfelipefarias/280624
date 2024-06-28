@@ -23,7 +23,7 @@ const alto1 = document.createElement("button");
 alto1.style.color = `white`;
 alto1.textContent = "GITHUB";
 alto1.addEventListener ("click", function(){
-    window.open("https://github.com/Mrpopy","_blank")
+    window.open("https://github.com/redfelipefarias")
 
 })
 alto1.style.backgroundColor = `black`;
@@ -125,10 +125,10 @@ body.appendChild(baixo);
 
 const baixo1 = document.createElement("h3");
 baixo1.style.color = `white`;
-baixo1.textContent = `Orientador/Professor: Gabriel`;
+baixo1.textContent = `Instituto Pompeia`;
 baixo.appendChild(baixo1);
 
 const baixo2 = document.createElement("h3");
 baixo2.style.color = `white`;
-baixo2.textContent = "Autor: Tiago Félix";
+baixo2.textContent = "RED";
 baixo.appendChild(baixo2);
