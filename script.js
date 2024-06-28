@@ -23,8 +23,13 @@ const alto1 = document.createElement("button");
 alto1.style.color = `white`;
 alto1.textContent = "GITHUB";
 alto1.addEventListener ("click", function(){
-    window.open("","_blank")
+    window.open("https://github.com/Mrpopy","_blank")
 
+})
+alto1.style.backgroundColor = `black`;
+alto1.style.border = `0px`;
+alto1.style.cursor = `pointer`;
+alto.appendChild(alto1); 
 
 const div = document.createElement('div');
 div.style.height = '600px';
@@ -39,7 +44,7 @@ div.style.border = "1px solid red ";
 body.appendChild(div);
 
 const textoBody = document.createElement('h1');
-textoBody.textContent = 'CALCULAR MÉDIA';
+textoBody.textContent = 'Calcular Média';
 div.appendChild(textoBody);
 
 const nome = document.createElement('input');
@@ -87,6 +92,7 @@ button.textContent = `Calcular`;
 button.style.height = `20px`;
 button.style.border = `2px solid black`;
 button.style.borderRadius = `5px`;
+button.style.cursor = `pointer`;
 div.appendChild(button)
 button.addEventListener('click', function () {
     const nome = nome.value;
