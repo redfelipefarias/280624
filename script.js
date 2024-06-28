@@ -21,7 +21,7 @@ div.style.border = "1px solid red ";
 body.appendChild(div);
 
 const textoBody = document.createElement('h1');
-textoBody.textContent = 'Calcular Média';
+textoBody.textContent = 'CALCULAR MÉDIA';
 div.appendChild(textoBody);
 
 const nome = document.createElement('input');
