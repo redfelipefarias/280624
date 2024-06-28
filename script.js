@@ -3,10 +3,28 @@ body.style.backgroundImage = `url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ
 body.style.backgroundSize = "cover";
 body.style.backgroundPosition = "center";
 body.style.display = 'flex';
-body.style.justifyContent = 'center';
+body.style.justifyContent = `space-between`;
 body.style.alignItems = 'center';
+body.style.margin = `0`;
 body.style.height = '100vh';
 body.style.overflow = 'hidden';
+
+const alto = document.createElement("header")
+alto.style.display = `flex`;
+alto.style.justifyContent = `center`;
+alto.style.alignItems = `center`;
+alto.style.backgroundColor = `black`;
+alto.style.color = `white`;
+alto.style.width = `150%`;
+alto.style.height = `70px`;
+body.appendChild(alto);   
+
+const alto1 = document.createElement("button");
+alto1.style.color = `white`;
+alto1.textContent = "GITHUB";
+alto1.addEventListener ("click", function(){
+    window.open("","_blank")
+
 
 const div = document.createElement('div');
 div.style.height = '600px';
@@ -64,6 +82,7 @@ const button = document.createElement(`button`);
 button.style.display = `flex`;
 button.style.justifyContent = `center`;
 button.style.width = `110px`;
+body.style.flexDirection = `column`;
 button.textContent = `Calcular`;
 button.style.height = `20px`;
 button.style.border = `2px solid black`;
@@ -71,10 +90,10 @@ button.style.borderRadius = `5px`;
 div.appendChild(button)
 button.addEventListener('click', function () {
     const nome = nome.value;
-    const numeros1 = parseFloat(numeros1.value)
-    const numeros2 = parseFloat(numeros2.value)
-    const numeros3 = parseFloat(numeros3.value)
-    const media = ((numeros1 + numeros2 + numeros3) / 3)
+    const numero1 = parseFloat(numero1.value)
+    const numero2 = parseFloat(numero2.value)
+    const numero3 = parseFloat(numero3.value)
+    const media = ((numero1 + numero2 + numero3) / 3)
 
 
 resultado.textContent = `A média das 3 notas é: ${media}`;
@@ -87,3 +106,23 @@ resultado.style.width = '200px';
 resultado.style.border = `1px solid red`;
 resultado.style.color = "white"
 div.appendChild(resultado);
+
+const baixo = document.createElement("footer")
+baixo.style.display = `flex`;
+baixo.style.justifyContent = `space-around`;
+baixo.style.alignItems = `center`;
+baixo.style.backgroundColor = `black`;
+baixo.style.color = `white`;
+baixo.style.width = `150%`;
+baixo.style.height = `70px`;
+body.appendChild(baixo);
+
+const baixo1 = document.createElement("h3");
+baixo1.style.color = `white`;
+baixo1.textContent = `Orientador/Professor: Gabriel`;
+baixo.appendChild(baixo1);
+
+const baixo2 = document.createElement("h3");
+baixo2.style.color = `white`;
+baixo2.textContent = "Autor: Tiago Félix";
+baixo.appendChild(baixo2);
