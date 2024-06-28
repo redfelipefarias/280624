@@ -13,7 +13,7 @@ const alto = document.createElement("header")
 alto.style.display = `flex`;
 alto.style.justifyContent = `center`;
 alto.style.alignItems = `center`;
-alto.style.backgroundColor = `black`;
+alto.style.backgroundColor = `darkred`;
 alto.style.color = `white`;
 alto.style.width = `150%`;
 alto.style.height = `70px`;
@@ -26,7 +26,7 @@ alto1.addEventListener ("click", function(){
     window.open("https://github.com/redfelipefarias")
 
 })
-alto1.style.backgroundColor = `black`;
+alto1.style.backgroundColor = `darkred`;
 alto1.style.border = `0px`;
 alto1.style.cursor = `pointer`;
 alto.appendChild(alto1); 
@@ -44,7 +44,8 @@ div.style.border = "1px solid red ";
 body.appendChild(div);
 
 const textoBody = document.createElement('h1');
-textoBody.textContent = 'Calcular Média';
+textoBody.textContent = 'CALCULAR MÉDIA';
+textoBody.style.color = 'darkred';
 div.appendChild(textoBody);
 
 const nome = document.createElement('input');
@@ -117,7 +118,7 @@ const baixo = document.createElement("footer")
 baixo.style.display = `flex`;
 baixo.style.justifyContent = `space-around`;
 baixo.style.alignItems = `center`;
-baixo.style.backgroundColor = `black`;
+baixo.style.backgroundColor = `darkred`;
 baixo.style.color = `white`;
 baixo.style.width = `150%`;
 baixo.style.height = `70px`;
@@ -129,6 +130,6 @@ baixo1.textContent = `Instituto Pompeia`;
 baixo.appendChild(baixo1);
 
 const baixo2 = document.createElement("h3");
-baixo2.style.color = `white`;
+baixo2.style.color = `black`;
 baixo2.textContent = "RED";
 baixo.appendChild(baixo2);
