@@ -36,7 +36,7 @@ div.appendChild(nome);
 const numero1 = document.createElement('input');
 numero1.style.width = '200px';
 numero1.style.height = '30px';
-numero1.placeholder = 'Digite a primeira nota';
+numero1.placeholder = ' Primeira nota';
 numero1.style.backgroundColor = 'lightgray';
 numero1.style.border = '1px solid red';
 numero1.style.borderRadius = '5px';
@@ -45,7 +45,7 @@ div.appendChild(numero1);
 const numero2 = document.createElement('input');
 numero2.style.width = '200px';
 numero2.style.height = '30px';
-numero2.placeholder = 'Digite a segunda nota';
+numero2.placeholder = ' Segunda nota';
 numero2.style.backgroundColor = 'lightgray';
 numero2.style.border = '1px solid red';
 numero2.style.borderRadius = '5px';
@@ -54,14 +54,36 @@ div.appendChild(numero2);
 const numero3 = document.createElement('input');
 numero3.style.width = '200px';
 numero3.style.height = '30px';
-numero3.placeholder = 'Digite a terceira nota';
+numero3.placeholder = ' Terceira nota';
 numero3.style.backgroundColor = 'lightgray';
 numero3.style.border = '1px solid red';
 numero3.style.borderRadius = '5px';
 div.appendChild(numero3);
 
-const bt = document.createElement('button');
-bt.textContent = 'Calcular Média';
-bt.style.borderRadius = '10px';
-bt.style.cursor = 'pointer';
-div.appendChild(bt);
+const button = document.createElement(`button`);
+button.style.display = `flex`;
+button.style.justifyContent = `center`;
+button.style.width = `110px`;
+button.textContent = `Calcular`;
+button.style.height = `20px`;
+button.style.border = `2px solid black`;
+button.style.borderRadius = `5px`;
+div.appendChild(button)
+button.addEventListener('click', function () {
+    const nome = nome.value;
+    const numeros1 = parseFloat(numeros1.value)
+    const numeros2 = parseFloat(numeros2.value)
+    const numeros3 = parseFloat(numeros3.value)
+    const media = ((numeros1 + numeros2 + numeros3) / 3)
+
+
+resultado.textContent = `A média das 3 notas é: ${media}`;
+});
+
+const resultado = document.createElement('div');
+resultado.style.backgroundColor = 'lightgray';
+resultado.style.height = '20px';
+resultado.style.width = '200px';
+resultado.style.border = `1px solid red`;
+resultado.style.color = "white"
+div.appendChild(resultado);
