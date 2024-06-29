@@ -6,6 +6,7 @@ body.style.display = 'flex';
 body.style.justifyContent = `space-between`;
 body.style.alignItems = 'center';
 body.style.margin = `0`;
+body.style.flexDirection = `column`;
 body.style.height = '100vh';
 body.style.overflow = 'hidden';
 
@@ -48,6 +49,11 @@ textoBody.textContent = 'CALCULAR MÉDIA';
 textoBody.style.color = 'darkred';
 div.appendChild(textoBody);
 
+const textoDiv2 = document.createElement('h3');
+textoDiv2.textContent = 'Preencha apenas com números nos inputs que pedem notas!';
+textoDiv2.style.color = 'darkred';
+div.appendChild(textoDiv2);
+
 const nome = document.createElement('input');
 nome.style.width = '200px';
 nome.style.height = '30px';
@@ -88,29 +94,29 @@ const button = document.createElement(`button`);
 button.style.display = `flex`;
 button.style.justifyContent = `center`;
 button.style.width = `110px`;
-body.style.flexDirection = `column`;
 button.textContent = `Calcular`;
 button.style.height = `20px`;
 button.style.border = `2px solid black`;
 button.style.borderRadius = `5px`;
 button.style.cursor = `pointer`;
 div.appendChild(button);
-
 button.addEventListener('click', function () {
-    const nome = nome.value;
-    const numero1 = parseFloat(numero1.value)
-    const numero2 = parseFloat(numero2.value)
-    const numero3 = parseFloat(numero3.value)
-    const media = ((numero1 + numero2 + numero3) / 3)
-resultado.textContent = `A média das 3 notas é: ${media}`;
+    const no = (nome.value);
+    const numer1 = parseFloat(numero1.value)
+    const numer2 = parseFloat(numero2.value)
+    const numer3 = parseFloat(numero3.value)
+    const media = (numer1 + numer2 + numer3) / 3;
+        resultado.textContent = `${no}, A média das 3 notas é: ${media}`;
 });
 
 const resultado = document.createElement('div');
 resultado.style.backgroundColor = 'lightgray';
-resultado.style.height = '20px';
-resultado.style.width = '200px';
+resultado.style.height = '30px';
+resultado.style.width = '500px';
+resultado.style.display = `flex`;
+resultado.style.justifyContent = 'center'
 resultado.style.border = `1px solid red`;
-resultado.style.color = "white"
+resultado.style.color =  'black'
 div.appendChild(resultado);
 
 const baixo = document.createElement("footer")
